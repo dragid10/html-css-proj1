@@ -1,0 +1,134 @@
+body {
+    background: #2980b9; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #2980b9, #2c3e50); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #2980b9, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+
+}
+
+header {
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px white;
+    text-align: center;
+    font-size: 15px;
+}
+
+footer {
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+}
+
+footer > p {
+    display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    border: 1px solid;
+    padding: 2px;
+}
+
+img {
+    height: 350px;
+    width: auto;
+}
+
+a:link {
+    color: yellow;
+}
+
+a:visited {
+    color: yellow;
+}
+
+/*Classes*/
+
+.inbl {
+    display: inline;
+    vertical-align: top;
+}
+
+.container {
+    white-space: nowrap;
+}
+
+.text {
+    font-size: 12px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-left: 49px;
+    margin-right: 53px;
+}
+
+.columns {
+    display: block;
+    float: left;
+    width: 50%;
+    border: 1px yellow solid;
+    font-size: 14px;
+}
+
+.android {
+    width: 150px;
+    height: auto;
+}
+
+.buttons {
+    margin: 5px;
+}
+
+/*IDS*/
+
+#content {
+    text-align: center;
+}
+
+#paragraph {
+    border: 2px white solid;
+    font-size: 14px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+#site-list > li {
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#navBar {
+    text-align: center;
+    margin-right: 50px;
+}
+#col1 {
+    font-style: italic;
+}
+#col2 {
+    font-style: oblique;
+}
+
+#username {
+    margin-left: 50px;
+}
+#year {
+    margin-left: 85px;
+}
+
+#currentStudent {
+    margin-left: 50px;
+}
+
+#comments {
+    margin-left: 49px;
+}
