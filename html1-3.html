@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Html1-3</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles2.css">
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://npmcdn.com/tether@1.4.0/dist/js/tether.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+<section>
+    <header><h2>CSE 270e <br> Adetayo (Alex) Oladele</h2></header>
+</section>
+<br>
+<nav>
+    <ul id="navBar">
+        <li><a href="html1-1.html"> HTML1-1 </a></li>
+        <li><a href="html1-2.html"> HTML1-2 </a></li>
+        <li><a href="html1-4.html"> HTML1-4 </a></li>
+    </ul>
+</nav>
+
+
+<section class="columns" id="col1">
+    <canvas id="myCanvas" width="450" height="450px"></canvas>
+
+    <button onclick="drawCanv1()">Draw Rects</button>
+</section>
+<section class="columns" id="col2">
+    <canvas id="myCanvas2" width="399" height="450px"></canvas>
+    <button onclick="drawCanv2()">Draw Rects</button>
+
+</section>
+
+<br>
+<br>
+<br>
+<footer>
+    <p>©</p>
+    <p>Alex Oladele</p> <br>
+    <a href="http://cse.miamioh.edu/"> Miami University Computer Science Department</a> <br>
+    <p>January 6, 2017</p>
+</footer>
+
+<script>
+    var c = document.getElementById("myCanvas");
+    var canv1 = c.getContext("2d");
+    var c2 = document.getElementById("myCanvas2");
+    var canv2 = c.getContext("2d");
+    console.log("Script should be running");
+    function randoColor() {
+        var color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+        return color;
+    }
+
+    function drawRandRec1() {
+        var c = document.getElementById("myCanvas");
+        var canv1 = c.getContext("2d");
+        canv1.fillStyle = randoColor();
+        canv1.fillRect(Math.floor(
+                Math.random() * 450),
+            Math.floor(Math.random() * 455),
+            Math.floor(Math.random() * 150),
+            Math.floor(Math.random() * 150));
+        canv1.stroke();
+    }
+
+    function drawCanv1() {
+        drawRandRec1();
+        drawRandRec1();
+        drawRandRec1();
+        drawRandRec1();
+    }
+</script>
+
+<script>
+    var c = document.getElementById("myCanvas");
+    var canv1 = c.getContext("2d");
+    var c2 = document.getElementById("myCanvas2");
+    var canv2 = c.getContext("2d");
+
+    function drawRandRec2() {
+        var c = document.getElementById("myCanvas2");
+        var canv2 = c.getContext("2d");
+        canv2.fillStyle = randoColor();
+        canv2.fillRect(Math.floor(
+                Math.random() * 450),
+            Math.floor(Math.random() * 455),
+            Math.floor(Math.random() * 150),
+            Math.floor(Math.random() * 150));
+        canv2.stroke();
+    }
+
+    function drawCanv2() {
+        drawRandRec2();
+        drawRandRec2();
+        drawRandRec2();
+        drawRandRec2();
+    }
+</script>
+
+</body>
+</html>
